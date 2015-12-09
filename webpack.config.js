@@ -1,15 +1,18 @@
 var path = require('path'),
     clientPath = path.join(__dirname, 'client'),
     appPath = path.join(clientPath, 'app'),
-    pkg = require('./package.json'),
-    HtmlWebpackPlugin = require('html-webpack-plugin');
+    appFile = 'app.js',
+    distPath = path.join(__dirname, 'dist'),
+    distFile = 'bundle.js'
+    HtmlWebpackPlugin = require('html-webpack-plugin'),
+    pkg = require('./package.json');
 
 module.exports = {
   devtool: 'sourcemap',
-  entry: path.join(appPath, 'app.js'),
+  entry: path.join(appPath, appFile),
   output: {
-    path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js'
+    path: distPath,
+    filename: distFile
   },
   module: {
     loaders: [
