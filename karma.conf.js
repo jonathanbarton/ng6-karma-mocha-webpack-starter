@@ -19,7 +19,8 @@ module.exports = function (config) {
       require("karma-mocha"),
       require("karma-mocha-reporter"),
       require("karma-sourcemap-loader"),
-      require("karma-webpack")
+      require("karma-webpack"),
+      require("karma-phantomjs-launcher")
     ],
 
     // preprocess matching files before serving them to the browser
@@ -33,7 +34,7 @@ module.exports = function (config) {
           { test: /\.js/, exclude: [/app\/lib/, /node_modules/], loader: 'babel' },
           { test: /\.html/, loader: 'raw' },
           { test: /\.css$/, loader: 'style!css' },
-          { test: /\.scss$/, loader 'style!css!sass!' }
+          { test: /\.scss$/, loader: 'style!css!sass!' }
         ]
       }
     },
@@ -60,7 +61,7 @@ module.exports = function (config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
 
     // if true, Karma runs tests once and exits
     singleRun: true
