@@ -18,7 +18,8 @@
     "watch": "webpack --watch --progress --profile --colors --display-error-details --display-cached",
     "build": "webpack --progress --profile --colors --display-error-details --display-cached",
     "test": "karma start karma.conf.js",
-    "serve": "webpack-dev-server --progress --inline --profile --colors --display-error-details --display-cached --port 8001"
+    "e2e": "protractor protractor.config.js",
+    "serve": "webpack-dev-server --progress --hot --inline --colors --display-error-details --port 8001"
   },
   "dependencies": {
     "angular": "^1.4.4",

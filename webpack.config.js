@@ -29,5 +29,13 @@ module.exports = {
         pkg: pkg,
         inject: 'body'
     })
-  ]
+  ],
+  devServer: {
+    proxy: {
+      '/api*': {
+        target: 'http://demo0067252.mockable.io/test',
+        secure: false
+      }
+    }
+  }
 };
