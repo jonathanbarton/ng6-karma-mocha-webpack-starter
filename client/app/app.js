@@ -13,5 +13,4 @@ let app = angular.module('app', [
 ]);
 
 app.config(applicationConfig);
-
 app.directive('app', App);
