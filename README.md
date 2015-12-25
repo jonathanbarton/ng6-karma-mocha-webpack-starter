@@ -1,1 +1,8 @@
-# ng6-karma-mocha-webpack-starter
+# What is this?
+
+## 1. Setup
+
+## 2. Commands
+
+## 3. Angular Component Generator
+
