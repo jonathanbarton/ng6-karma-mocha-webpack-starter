@@ -14,7 +14,6 @@
 
 ```
 npm install
-
 ```
 
 ## 2. Commands
@@ -32,7 +31,6 @@ protractor protractor.conf.js
 
 # Serve & Watch
 npm run serve
-
 ```
 
 ## 3. Angular Component Generator
