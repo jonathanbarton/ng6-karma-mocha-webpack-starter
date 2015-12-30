@@ -1,5 +1,19 @@
+<h2>Ohm's Law</h2>
+<article>
 
-<input type="radio" ng-model="vm.solveFor" value="r"/><label class="ohm__label">Resistance: </label><input class="ohm__resistance-input" type="text" ng-model="vm.resistance" ng-change="vm.calculate()"/><br/>
-<input type="radio" ng-model="vm.solveFor" value="i"/><label class="ohm__label">Current: </label><input class="ohm__current-input" type="text" ng-model="vm.current" ng-change="vm.calculate()"/><br/>
-<input type="radio" ng-model="vm.solveFor" value="v"/><label class="ohm__label">Voltage: </label><input class="ohm__voltage-input" type="text" ng-model="vm.voltage" ng-change="vm.calculate()"/><br/>
+<input type="radio" ng-model="vm.solveFor" value="r"/><label class="ohm__label">Resistance: </label><input class="ohm__resistance-input" type="text" ng-model="vm.resistance" ng-change="vm.calculate()"/>
+  <select>
+    <option>Ohms (Ω)</option>
+    <option>kOhms (kΩ)</option>
+    <option>MOhms (MΩ)</option>
+  </select><br/>
+<input type="radio" ng-model="vm.solveFor" value="i"/><label class="ohm__label">Current: </label><input class="ohm__current-input" type="text" ng-model="vm.current" ng-change="vm.calculate()"/>
+  <select>
+    <option>Amps (A)</option>
+    <option>mAmps (mA)</option>
+  </select><br/>
+<input type="radio" ng-model="vm.solveFor" value="v"/><label class="ohm__label">Voltage: </label><input class="ohm__voltage-input" type="text" ng-model="vm.voltage" ng-change="vm.calculate()"/>Volts (V)<br/>
+<label class="ohm__label">Power: </label><input class="ohm__voltage-input" type="text" ng-model="vm.voltage"/>Watts (W)<br/>
 <button class="ohm__clear-button" ng-click="vm.clearValues()">Clear Values</button>
+</article>
+

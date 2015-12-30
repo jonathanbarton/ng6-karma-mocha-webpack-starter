@@ -1,7 +1,7 @@
 class OhmController {
 
-  constructor(){
-    this.name = 'ohm';
+  constructor(resistanceCalculatorService){
+    this.name = 'ohmController';
     this.current = 0;
     this.resistance = 0;
     this.voltage = 0;
@@ -26,5 +26,6 @@ class OhmController {
   }
 }
 
+OhmController.$inject = ['resistanceCalculatorService'];
 
 export default OhmController;

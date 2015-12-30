@@ -1,5 +1,3 @@
-var chai = require('../../../../node_modules/chai/chai');
-var expect = chai.expect;
 
 describe("ohm", function () {
   var $compile, $rootScope;
