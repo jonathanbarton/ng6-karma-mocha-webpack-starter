@@ -1,17 +1,9 @@
 
 describe("ohm", function () {
-  var $compile, $rootScope;
-
-  beforeEach(inject(
-    ['$compile','$rootScope', function($c, $r) {
-      $compile = $c;
-      $rootScope = $r;
-    }]
-  ));
 
   it("should calculate the voltage from current and resistance", function() {
-    var element = $compile('<ohm-calculator></ohm-calculator>')($rootScope);
-    expect(element.html()).to.equal('');
+    angular.mock.module('app');
+
   });
 
   xit("should calculate the resistance from voltage and current", function() {

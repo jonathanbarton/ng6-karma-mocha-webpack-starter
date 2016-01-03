@@ -3,8 +3,16 @@ import angular from 'angular';
 class ResistanceCalculatorService {
   constructor() {}
 
-  pieceOfShit() {
-    return 'funky';
+  getCurrent(voltage, resistance) {
+    return voltage / resistance;
+  }
+
+  getResistance(voltage, current) {
+    return voltage / current;
+  }
+
+  getVoltage(current, resistance) {
+    return current * resistance;
   }
 }
 
